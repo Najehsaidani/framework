@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App avec Vue.js</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <link rel="stylesheet" href="assets/styles.css">
+       
+</head>
+<body>
+    <div id="app">
+        <h1>Gestion de Tâches</h1>
+        <listtask :tasks="tasks" @remove="removeTask"></listtask>
+        <add_task @add="addTask"></add_task>
+        <script src="js/script.js"></script>
+    </div>
+</body>
+
+</html>

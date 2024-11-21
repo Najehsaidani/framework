@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Vue de base</title>
+ <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>{{ message }}</h1>
+    <button @click="changerMessage">Changer le message</button>
+<script>
+      const app = Vue.createApp({
+        data() {
+          return {
+            message: 'Bonjour, Vue.js !'
+          };
+        },
+        methods: {
+          changerMessage() {
+            this.message = 'Le message a changé !';
+          }
+        }
+      });
+      app.mount('#app');
+    </script>
+  </body>
+  </html>
+  
+  </div>
